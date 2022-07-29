@@ -128,8 +128,21 @@ h1 {
   }
   .aside_main {
    border: coral;
+  
   }
 
+  .imagencontact {
+   height: 400px; 
+   width: 400px; 
+  
+  }
+
+  .aside_contacto {
+   max-width: 300px; 
+   max-height: 300px;
+  }
+
+  
 /* MEDIA QUERIES */
 
 
@@ -144,5 +157,33 @@ h1 {
         float: left;
     }
     
- }
+}
+
+body {
+   animation-name: fade-in;
+   animation-duration: 1s;
+}
+
+nav {
+   background-color: bisque;
+   animation-name: fade-in;
+   animation-duration: 1s;
+}
+
+nav :hover {
+   background-color: aquamarine; 
+   
+  
+}
+
+@keyframes fade-in {
+   0% {
+      transform: translateX(-200px);
+   }
+
+
+   100%{
+      transform: translateX(0px);
+   }
+}
 
