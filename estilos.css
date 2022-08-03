@@ -2,7 +2,7 @@
 .contenedor1 {
     height: 100vh;
     display: grid;
-    background-color: salmon;
+    background-color: rgb(31, 185, 39);
     grid-template-areas: "header header header header"
     "aside main main main"
     "aside section section2 section3"
@@ -16,7 +16,7 @@
  .contenedor2 {
     height: 100vh;
     display: grid;
-    background-color: salmon;
+    background-color: rgb(39, 173, 35);
     grid-template-areas: "header header header header"
     "main main main main"
     "footer footer footer footer"
@@ -39,10 +39,10 @@
  .contenedor4 {
     height: 100vh;
     display: grid;
-    background-color: salmon;
+    background-color: rgb(35, 197, 75);
     grid-template-areas: "aside header header header"
-    "aside section section2 section3"
-    "aside section section2 section3"
+    "aside section2 section2 section2"
+    "aside section2 section2 section2"
     "footer footer footer footer"
     ;
     border: solid black;
@@ -51,7 +51,7 @@
  .contenedor5 {
     height: 100vh;
     display: grid;
-    background-color: salmon;
+    background-color: rgb(83, 206, 66);
     grid-template-areas: "header header header header"
     "main main main section3"
     "section section section2 section3"
@@ -63,17 +63,17 @@
 
  header {
         grid-area: header;
-        background-color: grey;
+        background-color: rgb(64, 233, 79);
  }
 
  main {
-    background-color: brown;
+    background-color: rgb(114, 161, 4);
     grid-area: main;
     border:  black solid;
  }
 
  section {
-    background-color: wheat;
+    background-color: rgb(31, 168, 72);
     grid-area: section;
     border: solid black;
  }
@@ -94,7 +94,7 @@
 }
 
 footer {
-background-color: red;
+background-color: rgb(131, 238, 10);
 grid-area: footer;
 height: 10vh;
 border: dotted;
@@ -114,7 +114,7 @@ border: dotted;
 h1 {
     text-align: center;
     font-size: 40px;
-    background-color: blue;
+    background-color: rgb(7, 134, 35);
 }
 
 .parrafo1 {
@@ -127,7 +127,7 @@ h1 {
    text-align: center;
   }
   .aside_main {
-   border: coral;
+   border: rgb(78, 90, 22);
   
   }
 
@@ -165,13 +165,13 @@ body {
 }
 
 nav {
-   background-color: bisque;
+   background-color: rgb(64, 207, 100);
    animation-name: fade-in;
    animation-duration: 1s;
 }
 
 nav :hover {
-   background-color: aquamarine; 
+   background-color: rgb(34, 143, 67); 
    
   
 }
@@ -187,3 +187,7 @@ nav :hover {
    }
 }
 
+.titulo_noti {
+   font-size: 30px;
+   font-style: italic;
+}
