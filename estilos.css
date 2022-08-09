@@ -1,0 +1,193 @@
+/* CSS GRID */
+.contenedor1 {
+    height: 100vh;
+    display: grid;
+    background-color: rgb(31, 185, 39);
+    grid-template-areas: "header header header header"
+    "aside main main main"
+    "aside section section2 section3"
+    "footer footer footer footer"
+    ;
+    gap: 20px;
+    
+    
+ }
+
+ .contenedor2 {
+    height: 100vh;
+    display: grid;
+    background-color: rgb(39, 173, 35);
+    grid-template-areas: "header header header header"
+    "main main main main"
+    "footer footer footer footer"
+    ;
+    text-align: center;
+    border: black solid;
+ }
+
+ .contenedor3 {
+    height: 100vh;
+    display: grid;
+    background-color: grey;
+    grid-template-areas: "header header header header"
+    "aside main main main"
+    "aside section2 section2 section2"
+    "footer footer footer footer"
+    
+ }
+
+ .contenedor4 {
+    height: 100vh;
+    display: grid;
+    background-color: rgb(35, 197, 75);
+    grid-template-areas: "aside header header header"
+    "aside section2 section2 section2"
+    "aside section2 section2 section2"
+    "footer footer footer footer"
+    ;
+    border: solid black;
+
+ }
+ .contenedor5 {
+    height: 100vh;
+    display: grid;
+    background-color: rgb(83, 206, 66);
+    grid-template-areas: "header header header header"
+    "main main main section3"
+    "section section section2 section3"
+    "footer footer footer footer"
+    ;
+    border: solid black;
+    gap: 20px;
+ }
+
+ header {
+        grid-area: header;
+        background-color: rgb(64, 233, 79);
+ }
+
+ main {
+    background-color: rgb(114, 161, 4);
+    grid-area: main;
+    border:  black solid;
+ }
+
+ section {
+    background-color: rgb(31, 168, 72);
+    grid-area: section;
+    border: solid black;
+ }
+
+ aside {
+    grid-area: aside;
+    border: solid black;
+   
+
+
+ }
+.section2 {
+    grid-area: section2;
+}
+
+.section3 {
+    grid-area: section3;
+}
+
+footer {
+background-color: rgb(131, 238, 10);
+grid-area: footer;
+height: 10vh;
+border: dotted;
+
+}
+
+.menuprincipal {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+}
+ 
+.menuprincipal li {
+    margin: 0px 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(7, 134, 35);
+}
+
+.parrafo1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .noti_destacadas {
+   font-size: 30px;
+   text-align: center;
+  }
+  .aside_main {
+   border: rgb(78, 90, 22);
+  
+  }
+
+  .imagencontact {
+   height: 400px; 
+   width: 400px; 
+  
+  }
+
+  .aside_contacto {
+   max-width: 300px; 
+   max-height: 300px;
+  }
+
+  
+/* MEDIA QUERIES */
+
+
+
+@media screen and (max-width: 768px) {
+    .menuprincipal {
+      flex-direction: column;
+    }
+
+    main {
+        width: 70%;
+        float: left;
+    }
+    
+}
+
+body {
+   animation-name: fade-in;
+   animation-duration: 1s;
+}
+
+nav {
+   background-color: rgb(64, 207, 100);
+   animation-name: fade-in;
+   animation-duration: 1s;
+}
+
+nav :hover {
+   background-color: rgb(34, 143, 67); 
+   
+  
+}
+
+@keyframes fade-in {
+   0% {
+      transform: translateX(-200px);
+   }
+
+
+   100%{
+      transform: translateX(0px);
+   }
+}
+
+.titulo_noti {
+   font-size: 30px;
+   font-style: italic;
+}
