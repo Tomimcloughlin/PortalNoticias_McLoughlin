@@ -1,0 +1,10 @@
+@import "nav";
+@import "main";
+
+// Variables
+
+$color-primary:green;
+
+p {
+    background-color: $color-primary;
+}
