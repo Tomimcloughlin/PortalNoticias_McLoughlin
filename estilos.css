@@ -1,193 +1,213 @@
 /* CSS GRID */
-.contenedor1 {
-    height: 100vh;
-    display: grid;
-    background-color: rgb(31, 185, 39);
-    grid-template-areas: "header header header header"
-    "aside main main main"
-    "aside section section2 section3"
-    "footer footer footer footer"
-    ;
-    gap: 20px;
-    
-    
- }
 
- .contenedor2 {
-    height: 100vh;
-    display: grid;
-    background-color: rgb(39, 173, 35);
-    grid-template-areas: "header header header header"
-    "main main main main"
-    "footer footer footer footer"
-    ;
-    text-align: center;
-    border: black solid;
- }
+/* TITULO CARRUSEL Y FOOTER */
+.contenedor1 { 
+  height: 100vh;
+  display: grid;
+  background-colo: #210070;
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "aside section3 section3 section3"
+ "footer footer footer footer";
+  gap: 20px; }
 
- .contenedor3 {
-    height: 100vh;
-    display: grid;
-    background-color: grey;
-    grid-template-areas: "header header header header"
-    "aside main main main"
-    "aside section2 section2 section2"
-    "footer footer footer footer"
-    
- }
+.contenedor2 {
+  height: 100vh;
+  display: grid;
+  
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "footer footer footer footer";
+  text-align: center;
+  border: black solid; }
 
- .contenedor4 {
-    height: 100vh;
-    display: grid;
-    background-color: rgb(35, 197, 75);
-    grid-template-areas: "aside header header header"
-    "aside section2 section2 section2"
-    "aside section2 section2 section2"
-    "footer footer footer footer"
-    ;
-    border: solid black;
+.contenedor3 {
+  height: 100vh;
+  display: grid;
 
- }
- .contenedor5 {
-    height: 100vh;
-    display: grid;
-    background-color: rgb(83, 206, 66);
-    grid-template-areas: "header header header header"
-    "main main main section3"
-    "section section section2 section3"
-    "footer footer footer footer"
-    ;
-    border: solid black;
-    gap: 20px;
- }
+  grid-template-areas: "header header header header"
+ "aside main main main"
+ "aside section2 section2 section2"
+ "aside section2 section2 section2"
+ "footer footer footer footer"; }
 
- header {
-        grid-area: header;
-        background-color: rgb(64, 233, 79);
- }
+.contenedor4 {
+  height: 100vh;
+  display: grid;
 
- main {
-    background-color: rgb(114, 161, 4);
-    grid-area: main;
-    border:  black solid;
- }
+  grid-template-areas: "aside header header header"
+ "aside section2 section2 section2"
+ "aside2 section4 section4 section4"
+ "footer footer footer footer";
+  border: solid black; }
 
- section {
-    background-color: rgb(31, 168, 72);
-    grid-area: section;
-    border: solid black;
- }
+.contenedor5 {
+  height: 100vh;
+  display: grid;
 
- aside {
-    grid-area: aside;
-    border: solid black;
-   
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "section2 section2 section2 section2"
+ "footer footer footer footer";
+  border: solid black;
+  gap: 20px; }
 
+header {
+  grid-area: header;
+   }
 
- }
+main {
+  background-color: orange;
+  grid-area: main;
+  border: black solid; }
+
+section {
+  
+  grid-area: section;
+  border: solid black; }
+
+aside {
+  grid-area: aside;
+  border: solid black; }
+
+aside2 {
+  grid-area: aside2;
+  border: solid black; }
+
+.section4 {
+  grid-area: section4; 
+  background-color: orange;
+}
 .section2 {
-    grid-area: section2;
-}
-
+  grid-area: section2; 
+  background-color: orange;
+  }
+/* CARROUSEL DEL INDEX */
 .section3 {
-    grid-area: section3;
-}
-
-footer {
-background-color: rgb(131, 238, 10);
-grid-area: footer;
-height: 10vh;
-border: dotted;
-
-}
-
-.menuprincipal {
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
+  grid-area: section3;
+  text-align: center; 
+  width:640px;
+  height:360px;
 }
  
+
+
+footer {
+  
+  grid-area: footer;
+  height: 10vh;
+  border: dotted;
+  background-color: orange; }
+  
+
+.menuprincipal {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row; }
+  
 .menuprincipal li {
-    margin: 0px 30px;
-}
+  margin: 0px 30px; }
+  
 
 h1 {
-    text-align: center;
-    font-size: 40px;
-    background-color: rgb(7, 134, 35);
-}
+  text-align: center;
+  font-size: 40px;
+   }
 
 .parrafo1 {
-    font-size: 20px;
-    font-weight: bold;
-  }
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
+   }
 
-  .noti_destacadas {
-   font-size: 30px;
-   text-align: center;
+.noti_destacadas {
+  font-size: 30px;
+  text-align: center; 
+  background-color: orange;
   }
-  .aside_main {
-   border: rgb(78, 90, 22);
   
-  }
 
-  .imagencontact {
-   height: 400px; 
-   width: 400px; 
-  
-  }
+.imagencontact {
+  height: 400px;
+  width: 400px; }
 
-  .aside_contacto {
-   max-width: 300px; 
-   max-height: 300px;
-  }
+.aside_contacto {
+  max-width: 300px;
+  max-height: 300px; }
 
-  
 /* MEDIA QUERIES */
-
-
-
 @media screen and (max-width: 768px) {
-    .menuprincipal {
-      flex-direction: column;
-    }
-
-    main {
-        width: 70%;
-        float: left;
-    }
+  .menuprincipal {
+    flex-direction: column; }
     
-}
+  main {
+    width: 70%;
+    float: left; } }
 
 body {
-   animation-name: fade-in;
-   animation-duration: 1s;
-}
+  animation-name: fade-in;
+  animation-duration: 1s; }
 
 nav {
-   background-color: rgb(64, 207, 100);
-   animation-name: fade-in;
-   animation-duration: 1s;
-}
+  
+  animation-name: fade-in;
+  animation-duration: 1s; }
 
 nav :hover {
-   background-color: rgb(34, 143, 67); 
-   
-  
-}
+  background-colo: #213970; }
 
 @keyframes fade-in {
-   0% {
-      transform: translateX(-200px);
-   }
-
-
-   100%{
-      transform: translateX(0px);
-   }
-}
+  0% {
+    transform: translateX(-200px); }
+  100% {
+    transform: translateX(0px); } }
 
 .titulo_noti {
-   font-size: 30px;
-   font-style: italic;
+  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+    }
+  
+
+.tituloprincipal {
+    font-size: 100px;
+    ;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+p {
+  }
+/* Botones menu */
+.botoncuenta {
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+} 
+
+.reseña {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 25px;
+}
+
+.colordefondo {
+  
+    background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%),
+                      linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
+                      linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+                      radial-gradient(gray 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+}
+;
+
+.carouselExampleCaptions {
+  width:640px;
+  height:360px;
+}
+
+.nosotros {
+  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  color: wheat;
 }
