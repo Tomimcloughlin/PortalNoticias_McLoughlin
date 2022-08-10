@@ -26,9 +26,9 @@
   display: grid;
 
   grid-template-areas: "header header header header"
- "aside main main main"
- "aside main main main"
- "aside section5 section5 section5"
+ "main main main main"
+ "main main main main"
+ "section5 section5 section5 section5"
  "footer footer footer footer"; }
 
 .contenedor4 {
