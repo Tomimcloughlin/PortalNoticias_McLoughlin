@@ -27,7 +27,8 @@
 
   grid-template-areas: "header header header header"
  "aside main main main"
- "aside section2 section2 section2"
+ "aside main main main"
+ "aside section5 section5 section5"
  "footer footer footer footer"; }
 
 .contenedor4 {
@@ -36,7 +37,7 @@
 
   grid-template-areas: "aside header header header"
  "aside section2 section2 section2"
- "aside section2 section2 section2"
+ "aside2 section4 section4 section4"
  "footer footer footer footer";
   border: solid black; }
 
@@ -69,6 +70,12 @@ aside {
   grid-area: aside;
   border: solid black; }
 
+
+
+.section4 {
+  grid-area: section4; 
+  background-color: orange;
+}
 .section2 {
   grid-area: section2; 
   background-color: orange;
@@ -109,12 +116,14 @@ h1 {
   font-size: 20px;
   font-weight: bold;
   font-family: 'Bebas Neue', cursive;
+  text-align: center;
    }
 
 .noti_destacadas {
   font-size: 30px;
   text-align: center; 
   background-color: orange;
+  font-family: 'Bebas Neue', cursive;
   }
   
 
@@ -144,8 +153,7 @@ nav {
   animation-name: fade-in;
   animation-duration: 1s; }
 
-nav :hover {
-  background-colo: #213970; }
+
 
 @keyframes fade-in {
   0% {
@@ -167,8 +175,7 @@ nav :hover {
     font-family: 'Bebas Neue', cursive;
 }
 
-p {
-  }
+
 /* Botones menu */
 .botoncuenta {
   font-size: 30px;
@@ -196,3 +203,16 @@ p {
   height:360px;
 }
 
+.nosotros {
+  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  color: wheat;
+}
+
+.section5 {
+  grid-area: section5;
+  background-color: orange;
+  text-align: center;
+  font-size: 40px;
+}
