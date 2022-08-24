@@ -4,33 +4,52 @@
 .contenedor1 {
   height: 100vh;
   display: grid;
-  grid-template-areas: "header header header header" "main main main main" "aside section section2 section3" "footer footer footer footer";
-  gap: 20px; }
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "aside section section2 section3"
+ "footer footer footer footer";
+ 
+  gap: 20px; 
+  text-align: center;  
+}
 
 .contenedor2 {
   height: 100vh;
   display: grid;
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
-  text-align: center;
-  border: black solid; }
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "footer footer footer footer";
+  text-align: center; }
 
 .contenedor3 {
   height: 100vh;
   display: grid;
-  grid-template-areas: "header header header header" "main main main main" "main main main main" "section5 section5 section5 section5" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "main main main main"
+ "section5 section5 section5 section5"
+ "footer footer footer footer";
+ text-align: center; }
 
 .contenedor4 {
-  height: 100vh;
+  
   display: grid;
-  grid-template-areas: "aside header header header" "aside section2 section2 section2" "aside2 section4 section4 section4" "footer footer footer footer";
-  border: solid black; }
+  grid-template-areas: "header header header header"
+ "section2 section2 section2 section2"
+ "footer footer footer footer";
+ text-align: center;
+  }
+  
 
 .contenedor5 {
   height: 100vh;
   display: grid;
-  grid-template-areas: "header header header header" "main main main main" "section2 section2 section2 section2" "footer footer footer footer";
-  border: solid black;
-  gap: 20px; }
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "section2 section2 section2 section2"
+ "footer footer footer footer";
+  gap: 20px; 
+  text-align: center;}
 
 header {
   grid-area: header; }
@@ -56,6 +75,10 @@ aside {
 .section2 {
   grid-area: section2;
   background-color: orange; }
+
+ .imgcritica {
+  border: dotted; 
+ } 
 
 /* CARROUSEL DEL INDEX */
 .section3 {
@@ -106,9 +129,22 @@ h1 {
 @media screen and (max-width: 768px) {
   .menuprincipal {
     flex-direction: column; }
-  main {
-    width: 70%;
-    float: left; } }
+    .contenedor1 {
+      
+      grid-template-areas: "header header header header"
+     "main main main main"
+     "section3 section3 section3 section3"
+     "section section section section"
+     "section2 section2 section2 section2"
+     "footer footer footer footer";
+      
+     } 
+     .contenedor4 {
+      grid-template-areas: "header header header header"
+      "section2 section2 section2 section2"
+      "footer footer footer footer";
+       } }
+     
 
 body {
   animation-name: fade-in;
